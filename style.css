@@ -18,7 +18,7 @@
 body {
   background-color: #000;
   color: #fff;
-  min-width: 520px;
+  min-width: 600px;
 }
 h1 {
   font-family: "Netflix-md", sans-serif;
@@ -54,6 +54,7 @@ main {
 }
 .overlay-card {
   width: 60%;
+  min-width: 200px;
   height: 80px;
   border-radius: 8px;
   background-color: #000;
