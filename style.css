@@ -69,6 +69,13 @@ main {
   transform: translateX(-50%);
 }
 
+.overlay-card-left-grp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
 .overlay-card img {
   max-height: 100%;
 }
