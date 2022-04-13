@@ -76,6 +76,10 @@ main {
 .overlay-card-text {
   font-size: 0.7rem;
 }
+p {
+  color: #0071eb;
+  font-family: "Netflix-rg", sans-serif;
+}
 
 @media screen and (min-width: 1000px) {
   main {
