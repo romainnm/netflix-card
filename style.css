@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Netflix-rg";
+  src: url("./assets/font/NetflixSans_W_Rg.woff2");
+}
+@font-face {
+  font-family: "Netflix-md";
+  src: url("./assets/font/NetflixSans_W_Md.woff2");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+h1 {
+  font-family: "Netflix-md", sans-serif;
+  font-weight: 500;
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: "Netflix-rg", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+h3 {
+  font-family: "Netflix-md", sans-serif;
+}
+main {
+  padding: 100px;
+  width: 100vw;
+  height: 100vh;
+  min-width: 360px;
+}
+.text {
+  text-align: center;
+}
+.image-area {
+  height: auto;
+  border: 0;
+  position: relative;
+}
+.image-area > img {
+  width: 100%;
+}
+.overlay-card {
+  width: 60%;
+  height: 80px;
+  border-radius: 8px;
+  background-color: #000;
+  border: 1px solid rgb(83, 83, 83);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.overlay-card img {
+  max-height: 100%;
+}
+
+.overlay-card-text {
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    width: 60%;
+    text-align: inherit;
+  }
+  .image-area {
+    width: 40%;
+  }
+}
